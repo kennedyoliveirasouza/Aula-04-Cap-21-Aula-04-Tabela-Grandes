@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,40 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 500px;
-            border-collapse: collapse ;
+            border-collapse: collapse;
             /* Obrigatório para ter o título da tabela fixo */
             position: relative;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
 
-        thead > tr > th {
+        thead>tr>th {
             /* No título da linha do cabeçalho vou grudar "sticky" */
-            position: sticky; /* grudar */
-            top: 0; /* na posição 0 */
+            position: sticky;
+            /* grudar */
+            top: 0;
+            /* na posição 0 */
             background-color: gray;
 
         }
+
         td.num {
             text-align: right;
         }
+
         caption {
             /* Tamanho da fonte */
             font-size: 1.5em;
@@ -44,6 +54,7 @@
             background-color: lightgray;
 
         }
+
         /* Efeito Zebra
             tdoby > tr - Todo tr que é filho do tdoby
             pseudo-classe tr:nth-child(2n) - Todo filho atualizando no intervalo de 2 linhas.
@@ -63,24 +74,16 @@
                 background-color: yellow;
             }
         */
-        tbody > tr:nth-child(2n) {
+        tbody>tr:nth-child(2n) {
             background-color: gray;
 
         }
     </style>
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!-- Anatomia para tabelas grandes 
-        Table
-            Caption - Legenda da tabela
-            Thead - cabeça
-                TR, TD, TH
-            Tbody - corpo
-                TR, TD, TH
-            Tfoot - pé 
-                TR, TD, TH
-    -->
+
     <table>
         <caption>
             População das Unidades Federativas
@@ -131,6 +134,7 @@
         </tfoot>
 
     </table>
-        
+
 </body>
+
 </html>
